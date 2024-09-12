@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DDDEC6"
+    tools:context=".activity_solicitud_prestamo">
+
+    <Button
+        android:id="@+id/btn_volver_reg"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:backgroundTint="#2B2B2B"
+        android:text="Volver"
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="Solicitud de prestamo"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_volver_reg" />
+
+    <Button
+        android:id="@+id/btn_registrar"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:backgroundTint="#2B2B2B"
+        android:text="Enviar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:ems="10"
+        android:hint="Salario Base"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColorHint="#3f3f3f"
+        app:layout_constraintStart_toStartOf="@+id/input_user_phone"
+        app:layout_constraintTop_toBottomOf="@+id/input_user_phone" />
+
+    <EditText
+        android:id="@+id/input_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:hint="Nombre Usuario"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColorHint="#3f3f3f"
+        app:layout_constraintStart_toStartOf="@+id/input_user_id"
+        app:layout_constraintTop_toBottomOf="@+id/input_user_id" />
+
+    <EditText
+        android:id="@+id/input_user_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:hint="Telefono Usuario"
+        android:inputType="phone"
+        android:textAlignment="center"
+        android:textColorHint="#3f3f3f"
+        app:layout_constraintStart_toStartOf="@+id/input_user_email"
+        app:layout_constraintTop_toBottomOf="@+id/input_user_email" />
+
+    <EditText
+        android:id="@+id/input_user_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="Correo Usuario"
+        android:inputType="textEmailAddress"
+        android:textAlignment="center"
+        android:textColorHint="#3f3f3f"
+        app:layout_constraintStart_toStartOf="@+id/input_user_lastname"
+        app:layout_constraintTop_toBottomOf="@+id/input_user_lastname" />
+
+    <EditText
+        android:id="@+id/input_user_lastname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="Apellido Usuario"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColorHint="#3f3f3f"
+        app:layout_constraintStart_toStartOf="@+id/input_user_name"
+        app:layout_constraintTop_toBottomOf="@+id/input_user_name" />
+
+    <EditText
+        android:id="@+id/input_user_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="42dp"
+        android:ems="10"
+        android:hint="Id Usuario"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColorHint="#3f3f3f"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
